@@ -170,7 +170,7 @@ CKEDITOR.dialog.add( 'specialchar', function( editor ) {
 		minWidth: 430,
 		minHeight: 280,
 		buttons: [ CKEDITOR.dialog.cancelButton ],
-		charColumns: 17,
+		charColumns: editor.config.specialCharsColumns || 17,
 		onLoad: function() {
 			var columns = this.definition.charColumns,
 				chars = editor.config.specialChars;
