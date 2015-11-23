@@ -908,7 +908,7 @@
 							// x-small, small, medium, large, x-large, xx-large.
 							if ( attrs.size ) {
 								styleText.push( 'font-size:' +
-									( attrs.size > 3 ? 'large' : ( attrs.size < 3 ? 'small' : 'medium' ) ) );
+									( attrs.size > 3 ? '20px' : ( attrs.size < 3 ? '12px' : '14px' ) ) );
 								delete attrs.size;
 							}
 
