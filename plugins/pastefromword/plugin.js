@@ -67,9 +67,9 @@
 			editor.on( 'paste', function( evt ) {
 				var data = evt.data,
 					mswordHtml = data.dataValue;
-
+                                forceFromWord = 1;
 				// MS-WORD format sniffing.
-				if ( mswordHtml && ( forceFromWord || ( /(class=\"?Mso|style=\"[^\"]*\bmso\-|w:WordDocument)/ ).test( mswordHtml ) ) ) {
+				if ( mswordHtml && forceFromWord ) {
 					// Do not apply paste filter to data filtered by the Word filter (#13093).
 					data.dontFilter = true;
 
